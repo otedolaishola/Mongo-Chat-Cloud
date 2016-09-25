@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient
     , format = require('util').format;
 
-MongoClient.connect('mongodb://40.83.182.130:27017/test', function(err, db) {
+MongoClient.connect('mongodb://your-ip-address:27017/test', function(err, db) {
     if(err) throw err;
 
     var collection = db.collection('test_insert');
