@@ -11,7 +11,7 @@ var Db = require('mongodb').Db,
     assert = require('assert');
 
   // Set up the connection to the local db
-  var mongoclient = new MongoClient(new Server("YOUR-Mongo-IP", 27017), {native_parser: true});
+  var mongoclient = new MongoClient(new Server("52.178.26.128", 27017), {native_parser: true});
 
   // Open the connection to the server
   mongoclient.open(function(err, mongoclient) {
